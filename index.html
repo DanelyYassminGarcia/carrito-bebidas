@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla" />
+    <title>Carrito de bebidas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+
+            <li class="nav-item text-primary" role="presentation">
+                <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="imagenes/logo.jpeg" style="border-radius: 50% ;width: 120px;"></a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bebidas</a>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            1
+        </div>
+
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab">
+
+            <h2 class="h4 m-4 text-primary">Bebidas</h2>
+
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Vodka</h5>
+                        <img src="./imagenes/vodka.jpg" class="card-img-top" alt="vodka">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 700cc</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 850</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Fernet</h5>
+                        <img src="./imagenes/fernet.jpg" class="card-img-top" alt="fernet" style="height: 260px;">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 750cc</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 900</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Gancia</h5>
+                        <img src="./imagenes/gancia.jpg" class="card-img-top" alt="gancia">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 750cc</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 620</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Vino Tinto</h5>
+                        <img src="./imagenes/vinoTinto.webp" class="card-img-top" alt="vino tinto">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 950cc</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 400</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Ginebra</h5>
+                        <img src="./imagenes/ginebra.jpg" class="card-img-top" alt="ginebra">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 750cc</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 3290</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Tequila</h5>
+                        <img src="./imagenes/tequila.jpg" class="card-img-top" alt="tequila" style="height: 260px;">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 100cl</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 6000</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Ron</h5>
+                        <img src="./imagenes/ron.jpg" class="card-img-top" alt="ron" style="height: 260px;">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 750ml</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 1610</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Whisky</h5>
+                        <img src="./imagenes/whisky.jpg" class="card-img-top" alt="whisky">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Bebida alcoholica de 750cc</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 6400</span></h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary button">Añadir a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <br>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Bebidas</th>
+                        <th scope="col">Precio unitario</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+
+
+                </tbody>
+            </table>
+            <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal text-white">Total: 0</h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ventanaModal" id="botonComprar">COMPRAR</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="modal" id="ventanaModal" tabindex="-1" role="dialog" aria-labelledby="tituloVentana" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="tituloVentana">Compra Realizada con éxito</h5>
+                    <button class="close" data-bs-dismiss="modal" aria-label="cerrar">
+                        <span aria-hidden="true">&times;</span> 
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success">
+                        <h6><strong>Gracias por su compra, vuelva pronto!.</strong></h6>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" type="button" data-bs-dismiss="modal">Cerrar</button>
+                    <button class="btn btn-success" type="button" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="footerControlador">
+
+        <ul class="listaFooter">
+            <li class="listaItem"><a href="https://www.facebook.com">facebook</a></li>
+            <li class="listaItem"><a href="https://www.instagram.com">instagram</a></li>
+            <li class="listaItem"><a href="https://www.twitter.com">twitter</a></li>
+            <li class="listaItem">©Danely Garcia Todos los derechos reservados. 2022</li>
+        </ul>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="carrito.js"></script>
+</body>
+
+</html>
